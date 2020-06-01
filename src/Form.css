@@ -1,0 +1,71 @@
+#search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eeeef1;
+  border-radius: 5px;
+  max-width: 295px;
+  justify-content: space-between;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.date-label {
+  position: relative;
+}
+.date-label input[type="text"] {
+  padding: 10px 0px 10px 30px;
+  width: 120%;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+}
+.date-label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(img/icon_calender.svg) no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 6px;
+  top: 4px;
+}
+
+.search-btn {
+  width: 40px;
+  padding: 8px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: #eeeef1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.search-btn img {
+  width: 100%;
+}
+.search-btn:hover {
+  opacity: 0.6;
+  background: rgb(226, 200, 52);
+}
+
+.react-daterange-picker__wrapper {
+  border: none !important;
+}
+.react-daterange-picker__wrapper div:nth-of-type(1) {
+  order: 2;
+}
+.react-daterange-picker__range-divider {
+  order: 3;
+}
+.react-daterange-picker__wrapper div:nth-of-type(2) {
+  order: 4;
+}
+.react-daterange-picker__button {
+  order: 1;
+}
+.react-daterange-picker__button svg {
+  display: inherit;
+  opacity: 0;
+}

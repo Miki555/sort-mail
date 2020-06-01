@@ -36,3 +36,103 @@
     transform: rotate(360deg);
   }
 }
+
+/* mona change */
+section {
+  margin: 5% auto;
+}
+section h2 {
+  display: inline-flex;
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #696666;
+  margin-bottom: 5px;
+}
+section .mail-block {
+  border-top: 1px solid #eeeef1;
+}
+section .mail-block img {
+  margin: 100px auto;
+  display: block;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table thead {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  color: #696666;
+  background: #eeeef1;
+}
+table thead th {
+  padding: 10px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+table tbody td {
+  padding: 10px;
+}
+table thead .thead-from,
+table thead .thead-date {
+  cursor: pointer;
+}
+table thead .thead-from,
+.tbody-from {
+  width: 20%;
+}
+table thead .thead-to,
+.tbody-to {
+  width: 20%;
+}
+table thead .thead-subject,
+.tbody-subject {
+  width: 50%;
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* table thead .thead-date,
+.tbody-date {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+table thead .thead-date img {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+} */
+
+table thead .thead-date.sorted,
+table thead .thead-from.sorted,
+table thead .thead-to.sorted {
+  color: #000;
+  position: relative;
+}
+
+/* table thead th::after {
+  content: "";
+  position: absolute;
+  background: url(img/icon_arrow01.svg) no-repeat;
+  width: 10px;
+  height: 10px;
+  top: 15px;
+  margin: 0 10px;
+  opacity: 0;
+  transition: 0.6s;
+} */
+.sorted::after {
+  content: "";
+  position: absolute;
+  background: url(img/icon_arrow01.svg) no-repeat;
+  width: 10px;
+  height: 10px;
+  top: 10px;
+  margin: 0 10px;
+  transform: rotateX(180deg);
+  opacity: 1;
+}
