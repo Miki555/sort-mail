@@ -113,22 +113,10 @@ table thead .thead-to.sorted {
   color: #000;
   position: relative;
 }
-
-/* table thead th::after {
-  content: "";
-  position: absolute;
-  background: url(img/icon_arrow01.svg) no-repeat;
-  width: 10px;
-  height: 10px;
-  top: 15px;
-  margin: 0 10px;
-  opacity: 0;
-  transition: 0.6s;
-} */
 .sorted::after {
   content: "";
   position: absolute;
-  background: url(img/icon_arrow01.svg) no-repeat;
+  background: url(img/icon_arrow.svg) no-repeat;
   width: 10px;
   height: 10px;
   top: 10px;

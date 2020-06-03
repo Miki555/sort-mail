@@ -18,7 +18,7 @@ function App() {
   const [dates, setDates] = useState([new Date(), new Date()]);
   const [currentSort, setCurrentSort] = useState(null)
 
-  const [mona, setMona] = useState('STUDYING')
+  // const [mona, setMona] = useState('STUDYING')
 
   // const searched = true
 
@@ -28,7 +28,7 @@ function App() {
   
   return (
     <>
-     <Form searched={searched} setSearched={setSearched} dates={dates} setDates={setDates} mona={mona}/>
+     <Form searched={searched} setSearched={setSearched} dates={dates} setDates={setDates} />
     <section>
       <h2>
         Results:
@@ -70,7 +70,7 @@ function App() {
     </table> :  <img src={logo} alt="" class="logo" />}
       </div>
     </section>
-        <button onClick={() => {setMona('EAT')}}>{mona}</button>
+        {/* <button onClick={() => {setMona('EAT')}}>{mona}</button> */}
     </>
   );
 }
