@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "@wojtekmaj/react-daterange-picker": "^3.0.0",
     "date-fns": "^2.14.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-date-range": "^1.0.3",
     "react-dom": "^16.13.1",
